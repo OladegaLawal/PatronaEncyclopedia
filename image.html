@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="jQuery/jquery-3.4.0.min.js"></script>
+
+<!-- Popper JS -->
+<script src="popper.js/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body >
+   <style>
+
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+   
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+   </style>
+    
+
+
+
+ 
+  
+<!--Navigation bar-->
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 105, 105);">
+    <div class="container-fluid">
+      <a class="navbar-brand  d-flex align-items-center" href="index.html"><img src="LogoMakr-0A4uT4.png" alt="" width="40">
+        <span class="text-small font-weight-bold text-white  mb-0" style="font-family: Georgia, 'Times New Roman', Times, serif;">Patrona Encyclopedia
+        </span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+               <a class="nav-link active" href="index.html"> <span class="text-white" style="font-weight: 600;">Home</span></a>
+          </li>
+          <li class="nav-item ">
+             <a class="nav-link  text-white"   href="breeds.html"><span class="text-white" style="font-weight: 600;">Breeds</span></a>
+           
+          </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="tips.html">
+            <span class="text-white" style="font-weight: 600;">Tips</span>
+          </a>
+      
+        </li>
+          <li class="nav-item">
+                <a class="nav-link" href="image.html"><span class="text-white" style="font-weight: 600;">Gallery Section</span></a>
+          </li>
+          <li class="nav-item">
+            <button type="button"  class="btn btn-primary mr-sm-4" style="width: 170px;height: 40px;" data-toggle="modal" data-target="#myModal">Adopt A pet today</button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form action="#" class="needs-validation" novalidate>
+                      <div class="form-group">
+                        <label for="name" style="color:black;">Name: </label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter full name" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email"  style="color:black;">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="address"  style="color:black;">House address:</label>
+                        <input type="address" class="form-control" id="address" placeholder="Enter Address" name="address" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="breed"  style="color:black;">Breed:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter Breed wanted" name="text" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="phone"  style="color:black;">Phone number:</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+            
+         </li>     
+         <li class="nav-item">
+          <button type="button"  class="btn btn-primary" style="width: 170px;height: 40px;" data-toggle="modal" data-target="#myModalcontact">Contact Us</button>
+          <!-- The Modal -->
+          <div class="modal" id="myModalcontact">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form action="#" class="needs-validation" novalidate>
+                    <div class="form-group">
+                      <label for="name" style="color:black;">Name: </label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter full name" name="uname" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email"  style="color:black;">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                   
+                    <div class="form-group">
+                      <label for="breed"  style="color:black;">Subject:</label><br>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px;width: 100%;"></textarea>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone"  style="color:black;">Phone number:</label>
+                      <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div><br>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          
+       </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header><br><br>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+       <div class="col-4">
+           <img src="afador.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+       </div>
+       <div class="col-4">
+             <img src="affehuahua.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+       </div>
+       <div class="col-4">
+              <img src="Affenpinscher.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+       </div>
+     </div><br><br>
+
+
+
+
+ <div class="row">
+   <div class="col-4">
+      <img src="Afgan general.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+   </div>
+   <div class="col-4">
+      <img src="afghan-hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+   </div>
+   <div class="col-4">
+      <img src="airedale-terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+   </div>
+ </div><br><br>
+
+ <div class="row">
+   <div class="col-4">
+      <img src="Alaskan-malamute-dog-seiz-009.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+   </div>
+   <div class="col-4">
+          <img src="Alopekis.jpg" alt="" class="zoom" style="height: 22.5vw; width: 25vw;">
+   </div>
+   <div class="col-4">
+      <img src="Alpine dachsbracke.jpg" alt="" class="zoom" style="height: 22.5vw; width: 25vw;">
+   </div>
+ </div><br><br>
+  
+
+       <div class="row">
+          <div class="col-4">
+              <img src="Lhasa Apso.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+          <div class="col-4">
+             <img src="Polish Lowland Sheepdog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+          <div class="col-4">
+              <img src="Komondo.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+       </div><br><br>
+          
+  
+  
+          <div class="row">
+
+
+            <div class="col-4">
+                <img src="Kyi-Leo.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+            </div>
+            <div class="col-4">
+            <img src="Koyun dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+            </div>
+            <div class="col-4">
+                <img src="Catahoula Leopard Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+                </div>
+                
+            
+            </div><br><br>
+            
+    
+    
+            <div class="row">
+
+
+              <div class="col-4">
+                  <img src="Labrador Retriever.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+              </div>
+              <div class="col-4">
+              <img src="Lagotto Romagnolo.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+              </div>
+              <div class="col-4">
+                  <img src="dogo argentino.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+                  </div>
+                  
+              
+              </div><br><br>
+              
+      
+      
+              <div class="row">
+
+
+                <div class="col-4">
+                    <img src="Hovawart.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                </div>
+                <div class="col-4">
+                <img src="Irish Red And White Setter.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                </div>
+                <div class="col-4">
+                    <img src="Ibizan Hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                    </div>
+                    
+                
+                </div><br><br>
+              
+              <div class="row">
+
+
+                <div class="col-4">
+                    <img src="Markiesje.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                </div>
+                <div class="col-4">
+                <img src="Irish Wolfhound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                </div>
+                <div class="col-4">
+                    <img src="Irish Water Spaniel.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                    </div>
+                    
+                
+                </div><br><br>
+            
+            <div class="row">
+
+
+              <div class="col-4">
+                  <img src="Irish Terrier.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+              </div>
+              <div class="col-4">
+              <img src="Irish Setter.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+              </div>
+              <div class="col-4">
+                  <img src="Istrian coarse haired round.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                  </div>
+                  
+              
+              </div><br><br>
+    
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Kangaroo Dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Karelian Bear Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Suomen Kennellitto.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Huskydoodle.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Hygen Hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="illyrian hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="alaskan-klee-kai-i2-sz3.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Australian Kelpie.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+          <img src="Norwegian Elkhound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Jack-A-Poo.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="barak dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Jack Russell Terrier.jpeg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Jackshund.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="chinese crested dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Japanese Chin.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Faroese Sheepdog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="French Spaniel.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Flat-Coated Retriever.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="French Bullhuahua.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Havanese.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Greyster.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Hanoverian Scenthound.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Caravan Hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Danish-Swedish Farmdog.jpg" alt=".." class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Golden Shepherd.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Grand Basset Griffon Vendéen.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Greater swiss Mountain dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="American Hairless terrier.png" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Halls heeler.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Gascon Saintongeois.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="French Bullhuahua.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Boxmatian.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Hamiltonstovare.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Denmark Feist.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Chesapeake Bay Retriever.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Chien Français Blanc et Noir.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Goberian.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Dalmatian.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Croatian Sheep Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="American Leopard Hound.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="White Swiss Shepherd Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="csm_verein-fuer-deutsche-schaeferhunde-alles-rund-um-rasse-EN_971015d973.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Borzoi.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="papillon dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Manchester Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="cordoba fighting dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Corman Shepherd.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Chien Français Blanc et Orange.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Ariège Pointer.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Wetterhoun.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Trigg Hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="vikhan.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Visla.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;" >
+      </div>
+      <div class="col-4">
+          <img src="Portuguese Water Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+          
+      
+      </div><br><br>
+  
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Xiasi.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Xoloitzcuintle.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Basset Fauve de Bretagne.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+        </div><br><br>   
+      
+     
+    
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="curly coated retriever.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Braque Dupuy.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Tatra Shepherd Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Ecuador hairless dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="East-European Shepherd.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Belgian_sheep_dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Wirehaired Pointing Griffon.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Basset Fauve de Bretagne.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="tyrolean hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Labrastaff.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Labrador Retriever.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Landseer dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Kuvasz.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="labradane.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Chusky.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Kerry Blue Terrier.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Black Russian Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Braque d'Auvergne.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="siberian husky.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="SpanielAmericanWater.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Alopekis.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Old English Sheepdog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Doberdor.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Dogo Sardesco.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Old danish Pointer.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Nova Scotia Duck Tolling Retriever.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Czecholovakian wolf dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+      <div class="row">
+      <div class="col-4">
+          <img src="Bugg.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="East-European Shepherd.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Chow Shepherd.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="canadian eskimo dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Tatra Shepherd Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Fox Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+  
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Cairn Terrier.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Cimarrón Uruguayo.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Japanese Spitz.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          
+      
+      </div><br><br>
+    
+
+   
+
+   <div class="row">
+      <div class="col-4">
+          <img src="Kars dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Korean Jindo Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Ariège Pointer.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+   </div><br><br>
+  
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Horgi.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Cesky fousek.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Teddy Roosevelt Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+
+
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Alpine Mastiff.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="American pigabull.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="akbash.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Billy (dog).jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="brazillian terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Bichon-frise.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+
+    
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="chongqing dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Clumber Spaniel.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Catahoula Leopard Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Deutscher Wachtelhund.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Denmark Feist.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Doxle.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+    <div class="row">
+
+
+      <div class="col-4">
+          <img src="Faroese Sheepdog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="Finnish Spitz.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+          <img src="Finnish Lapphund.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+    </div><br><br>
+
+
+    <div class="row">
+
+    <div class="col-4">
+      <img src="Grand Basset Griffon Vendéen.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+  </div>
+  <div class="col-4">
+  <img src="Italian Greyhound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+  </div>
+  <div class="col-4">
+      <img src="Gull Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+</div><br><br>
+
+<div class="row">
+
+<div class="col-4">
+  <img src="Artois Hound.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+</div>
+<div class="col-4">
+<img src="Posavac Hound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+</div>
+<div class="col-4">
+  <img src="Lapponian Herder.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+  </div>
+</div><br><br>
+
+<div class="row">
+
+  <div class="col-4">
+    <img src="Shiba inu.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+  </div>
+  <div class="col-4">
+  <img src="Northern Inuit Dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+  </div>
+  <div class="col-4">
+    <img src="Segugio Italiano.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+    </div>
+  </div><br><br>
+
+  <div class="row">
+
+    <div class="col-4">
+      <img src="karakachan dog.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+    </div>
+    <div class="col-4">
+    <img src="Prazsky Krysarik.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+    </div>
+    <div class="col-4">
+      <img src="Bully Kutta.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+    </div><br><br>
+
+    <div class="row">
+
+      <div class="col-4">
+        <img src="Leonberger.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+      </div>
+      <div class="col-4">
+      <img src="East Siberian Laika.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+      </div>
+      <div class="col-4">
+        <img src="Blue lacy.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+        </div>
+      </div><br><br>
+    
+      
+      <div class="row">
+
+        <div class="col-4">
+          <img src="Markiesje.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+        </div>
+        <div class="col-4">
+        <img src="Maremma Sheepdog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+        </div>
+        <div class="col-4">
+          <img src="Moscow Watchdog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+        </div><br><br>
+        
+        <div class="row">
+
+          <div class="col-4">
+            <img src="Newfoundland.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+          </div>
+          <div class="col-4">
+          <img src="Norwegian Buhund.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+          </div>
+          <div class="col-4">
+            <img src="Neapolitan Mastiff.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+            </div>
+          </div><br><br>
+
+          <div class="row">
+
+            <div class="col-4">
+              <img src="South Russian Ovcharka.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+            </div>
+            <div class="col-4">
+            <img src="Old croatian sighthound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+            </div>
+            <div class="col-4">
+              <img src="Otterhound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+              </div>
+            </div><br><br>
+
+            <div class="row">
+
+              <div class="col-4">
+                <img src="Pug.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+              </div>
+              <div class="col-4">
+              <img src="Puli.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+              </div>
+              <div class="col-4">
+                <img src="puppycute.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                </div>
+              </div><br><br>
+
+
+
+              <div class="row">
+
+                <div class="col-4">
+                  <img src="Rottador.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                </div>
+                <div class="col-4">
+                <img src="Rhodesian Ridgeback.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                </div>
+                <div class="col-4">
+                  <img src="Teddy Roosevelt Terrier.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                  </div>
+                </div><br><br>
+
+
+                <div class="row">
+
+                  <div class="col-4">
+                    <img src="SpanielAmericanWater.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                  </div>
+                  <div class="col-4">
+                  <img src="Silken Windhound.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                  </div>
+                  <div class="col-4">
+                    <img src="Shikoku dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                    </div>
+                  </div><br><br>
+
+                  <div class="row">
+
+                    <div class="col-4">
+                      <img src="Toy Trawler Spaniel.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                    </div>
+                    <div class="col-4">
+                    <img src="Tosa dog.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                    </div>
+                    <div class="col-4">
+                      <img src="Briquet Griffon Vendéen.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                      </div>
+                    </div><br><br>
+    
+                    
+                    <div class="row">
+
+                      <div class="col-4">
+                        <img src="Wetterhoun.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                      </div>
+                      <div class="col-4">
+                      <img src="Dogue de Bordeaux.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                      </div>
+                      <div class="col-4">
+                        <img src="Chien Français Blanc et Noir.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                        </div>
+                      </div><br><br>
+        
+
+                       
+                    <div class="row">
+
+                      <div class="col-4">
+                        <img src="Pitsky.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                      </div>
+                      <div class="col-4">
+                      <img src="Plott.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;">
+                      </div>
+                      <div class="col-4">
+                        <img src="German Shepherd Rottweiler Mix.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                        </div>
+                      </div><br><br>
+        
+
+                       
+                    <div class="row">
+
+                      <div class="col-4">
+                        <img src="Wetterhoun.jpg" alt="..." class="zoom" style="height: 22.5vw;width: 25vw;">
+                      </div>
+                      <div class="col-4">
+                      <img src="Dogue de Bordeaux.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                      </div>
+                      <div class="col-4">
+                        <img src="Chien Français Blanc et Noir.jpg" alt="" class="zoom" style="height: 22.5vw;width: 25vw;"  >
+                        </div>
+                      </div><br><br>
+        
+    
+
+</div>
+
+
+<!--Footer-->
+<footer style="background-color: rgba(146, 146, 146, 0.541);">
+
+    <div class="container"><br><br>
+      
+      
+    <div class="container">
+      <!--Breadcrumb-->
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="about_us_link">About</a></li>
+        <li class="breadcrumb-item">Gallery Section</li>
+        <li class="breadcrumb-item"><a href="tips.html">Tips</a></li>
+        <li class="breadcrumb-item"><a href="breeds.html">Breeds</a></li>
+      </ul>
+    </div>
+      
+      <br><br><br><br><br>
+    
+    <div class="row">
+    
+    <div class="col-md-2">
+    <a href="index.html"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Home</h5></a>
+    </div>
+    
+    <div class="col-md-2">
+    <a href="about_us_link"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;" >About Us</h5></a>
+    </div>
+    
+    <div class="col-md-2">
+    <a href="service_id"><h5  class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Services</h5></a>
+    </div>
+      
+    <div class="col-md-2">
+    <a href="https://www.bbc.com/news/topics/cl866rrqjz4t/dogs"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">News</h5></a>
+    </div>
+    
+  
+    </div>
+    
+    </div>
+    <br><br><br><br><br><br>
+    <p class="text-white text-center" style="font-size: 1.3vw;">&copyCopyrights | Privacy policies</p>
+    <br>
+    </footer>
+    
+
+</body>
+</html>

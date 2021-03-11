@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="jQuery/jquery-3.4.0.min.js"></script>
+
+<!-- Popper JS -->
+<script src="popper.js/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+/* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+
+    </style>
+   
+
+
+  
+<!--Navigation bar-->
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 105, 105);">
+    <div class="container-fluid">
+      <a class="navbar-brand  d-flex align-items-center" href="index.html"><img src="LogoMakr-0A4uT4.png" alt="" width="40">
+        <span class="text-small font-weight-bold text-white  mb-0" style="font-family: Georgia, 'Times New Roman', Times, serif;">Patrona Encyclopedia
+        </span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+               <a class="nav-link active" href="index.html"> <span class="text-white" style="font-weight: 600;">Home</span></a>
+          </li>
+          <li class="nav-item ">
+             <a class="nav-link  text-white"   href="breeds.html"><span class="text-white" style="font-weight: 600;">Breeds</span></a>
+           
+          </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="tips.html">
+            <span class="text-white" style="font-weight: 600;">Tips</span>
+          </a>
+      
+        </li>
+          <li class="nav-item">
+                <a class="nav-link" href="image.html"><span class="text-white" style="font-weight: 600;">Gallery Section</span></a>
+          </li>
+          <li class="nav-item">
+            <button type="button"  class="btn btn-primary mr-sm-4" style="width: 170px;height: 40px;" data-toggle="modal" data-target="#myModal">Adopt A pet today</button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form action="#" class="needs-validation" novalidate>
+                      <div class="form-group">
+                        <label for="name" style="color:black;">Name: </label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter full name" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email"  style="color:black;">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="address"  style="color:black;">House address:</label>
+                        <input type="address" class="form-control" id="address" placeholder="Enter Address" name="address" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="breed"  style="color:black;">Breed:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter Breed wanted" name="text" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="phone"  style="color:black;">Phone number:</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+            
+         </li>     
+         <li class="nav-item">
+          <button type="button"  class="btn btn-primary" style="width: 170px;height: 40px;" data-toggle="modal" data-target="#myModalcontact">Contact Us</button>
+          <!-- The Modal -->
+          <div class="modal" id="myModalcontact">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form action="#" class="needs-validation" novalidate>
+                    <div class="form-group">
+                      <label for="name" style="color:black;">Name: </label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter full name" name="uname" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email"  style="color:black;">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                   
+                    <div class="form-group">
+                      <label for="breed"  style="color:black;">Subject:</label><br>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px;width: 100%;"></textarea>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone"  style="color:black;">Phone number:</label>
+                      <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div><br>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          
+       </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container"><br><br>
+    <h6 class="text-muted text-uppercase">Pet care/Dog care</h6><hr style="border: 1px solid black;">
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Dog Nutrition Tips</h1>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">A balanced diet is critically important to your dog’s cell maintenance and growth and overall health. Barring any special needs, illness-related deficiencies, or instructions from your vet, your pet should be able to get all the nutrients he or she needs from high-quality commercial pet foods, which are specially formulated with these standards in mind.</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">But dogs of different ages have different nutritional requirements. So, how much—or how little—should you be feeding your four-legged friend? Read on to learn what your pet’s body needs at the various stages of life.</p><br>
+<div class="row">
+<div class="col-6">
+    <img src="tipsimage.jpg" alt="..." style="width: 40vw; height: 30vw;">
+
+</div>
+<div class="col-6">
+    <img src="tipsimage2.jpg" alt="..." style="width: 40vw; height: 30vw;">
+
+</div>
+</div><br><br>
+<h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Nutrients Your Dog Needs</h3>
+
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Nutrients are substances obtained from food and used by an animal as a source of energy and as part of the metabolic machinery necessary for maintenance and growth. There are the six essential classes of nutrients dogs need for optimum healthy living.</p>
+<ul id="myUL">
+    <li><span class="caret" style="font-size: 1.3vw;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(255, 187, 0);">CLICK TO READ MORE</span>
+      <ul class="nested">
+        <hr style="border: 1px solid black;">
+       <h5>Water</h5>
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Essential to life, water accounts for between 60 to 70% of an adult pet’s body weight. While food may help meet some of your pet's water needs (dry food has up to 10% moisture, while canned food has up to 78% moisture), pets must have fresh clean water available to them at all times. A deficiency of water may have serious repercussions for pets. A 10% decrease in body water can cause serious illness, while a 15% loss can result in death.  </p> 
+        <h5>Protein</h5>
+        
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Proteins are the basic building blocks for cells, tissues, organs, enzymes, hormones and antibodies, and are essential for growth, maintenance, reproduction and repair. Proteins can be obtained from a number of sources including animal-based meats such as chicken, lamb, turkey, beef, fish and eggs (which have complete amino acid profiles) and in vegetables, cereals and soy (but these are considered incomplete proteins). <br>
+<i>Please note: Do not give your pet raw eggs. Raw egg white contains avidin, an anti-vitamin that interferes with the metabolism of fats, glucose, amino acids and energy.</i>
+</p>
+<h5>Fats</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Fats are the most concentrated form of food energy, providing your pet with more than twice the energy of proteins or carbohydrates. Fats are essential in the structure of cells, needed for the production of some hormones, and are required for absorption and utilization of certain vitamins. Fats also provide insulation and protection for internal organs. A deficiency of essential fatty acids (such as linoleic acid) may result in reduced growth or increased skin problems.</p>
+<h5>Carbohydrates</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Carbohydrates provide energy, play a vital role in the health of the intestine, and are important for reproduction. While there is no minimum carbohydrate requirement, there is a minimum glucose requirement necessary to supply energy to critical organs such as the brain.</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Fibers are kinds of carbohydrates that alter the bacterial population in the small intestine, which can help manage chronic diarrhea in dogs. For dogs to obtain the most benefit from fiber, the fiber source must be moderately fermentable. Moderately fermentable fibers—including beet pulp, which is commonly used in dog foods—are best to promote a healthy gut while avoiding the undesirable side effects of highly fermentable fibers, like flatulence and excess mucus.
+</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Other examples of moderately fermentable fibers include brans (corn, rice and wheat) and wheat middlings. Foods that are high in fiber are not good for dogs with high energy requirements, and who are young and growing.
+</p>
+<h5>Vitamins</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Tiny amounts of vitamins are necessary in dogs for normal metabolic functioning. Most vitamins cannot be synthesized in the body, and therefore are essential to obtain in the diet.
+</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Please note that when feeding your dog a complete and balanced diet, it is unnecessary to give a vitamin supplement unless a specific vitamin deficiency is diagnosed by a veterinarian. Due to over supplementation, poisoning due to excess vitamins (hypervitaminosis) is more common these days than vitamin deficiency (hypovitaminosis). Excess vitamin A may result in bone and joint pain, brittle bones and dry skin. Excess vitamin D may result in very dense bones, soft tissue calcification and kidney failure.
+</p>
+<h5>Minerals</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Minerals are nutrients that cannot be synthesized by animals and must be provided in the diet. In general, minerals are most important as structural constituents of bones and teeth, for maintaining fluid balance and for their involvement in many metabolic reactions.
+</p>
+<hr style="border: 1px solid black;">
+      </ul>
+    </li>
+  </ul>
+<br>
+  <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Weaning And Feeding Your Puppy</h3>
+
+
+  <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">If you’re responsible caring for puppies in the first few months of their lives, you’ll need to be prepared to move them from a diet of mom’s milk to regular puppy food. This process of gradually reducing a puppy’s dependency on his mother’s milk, known as weaning, should generally begin between three and four weeks of age and is ideally completely by the time the puppy is seven to eight weeks.</p>
+
+
+  <ul id="myUL">
+    <li><span class="caret" style="font-size: 1.3vw;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(255, 187, 0);">CLICK TO READ MORE</span>
+      <ul class="nested">
+        <hr style="border: 1px solid black;">
+       <h5>When To Wean A Litter Of Puppies</h5>
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Puppies receive complete nutrition from their mother’s milk for the first four weeks of life, so there is no need to feed them anything during that time. However, in the event that the mother dog is ill or doesn’t produce enough milk during these four weeks—or if the pups are found as orphans—it may be necessary to feed them commercial milk replacer. If you find yourself in this situation, contact your veterinarian for product and feeding recommendations.</p> 
+
+
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">After that time, it’s best to let weaning be a gradual process that occurs over several weeks. This allows the mother dog to slowly dry up her milk supply and puppies need time to learn important behaviors from their mother and littermates, including how to interpret signs of dominance, inhibit their own biting habits and submit to more dominant dogs. Puppies generally begin eating puppy food around three to four weeks of age.</p> 
+
+
+        <h5>How To Wean A Litter Of Puppies</h5>
+        
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Start by separating the mother from her litter for a few hours at a time. This time apart will reduce the pups’ dependency on their mother’s milk and overall presence. While separated, introduce the puppies to eating from a pan. The amount of food, the frequency and length of separation can gradually be increased. As the puppies become independent and self-confident, they can spend more and more time away from their mother until they are completely weaned.      
+</p>
+
+     
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Take your time. It can be frustrating if puppies don’t immediately take to the transition, but be patient—periodic setbacks are normal!
+</p>
+<h5>Caring For The Mother During The Weaning Proces</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">To prevent the mother from overproducing milk—which can lead to painful, engorged mammary glands—it is important to follow a feeding and separation schedule both for her and the puppies. This should be discussed with your veterinarian to ensure that the puppies are receiving adequate nutrition, and that the mother’s food intake is being adjusted properly when she is no longer nursing her litter.</p>
+<h5>Feeding Your Puppy During the Weaning Process</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">While weaning, it’s a good idea to feed puppies the same high-quality puppy food they’ll eat throughout their entire growth period. Be sure to moisten the food with warm water (or puppy milk replacer) to create a soupy mix that’s appealing to their sensitive palates.</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Puppies often play with their food when it is first introduced, but they will quickly learn what to do with it! Start with small quantities, and gradually increase the amount of puppy food. By the time the pups are completely weaned at seven to eight weeks old, they should be eating their dry food consistently.
+</p>
+
+<h5>How Much Dry Food to Feed Your Puppy</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Puppies require up to twice the energy intake of adult dogs and, depending on the breed, will need to be fed a food that contains 25 to 30% protein. Remember, the adult size of a dog is determined genetically—not by how fast the animal grows. Do not overfeed in an attempt to accelerate a puppy’s growth rate.
+</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">If they are allowed to overeat, puppies can consume too many calories, grow too rapidly and develop health problems. Small breeds often reach their adult body weight in nine to twelve months. As puppies, its okay to leave dry food out for small them to peck as they wish. But most medium-breed puppies and all large- or giant-breed pups can suffer from bone or joint problems if they eat too much during this stage and benefit most from controlled feeding.
+</p><hr style="border: 1px solid black;">
+      </ul>
+    </li>
+  </ul>
+<br>
+  <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Feeding Your Adult Dog</h3>
+
+  <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Adult dogs require sufficient nutrients to meet energy needs and to maintain and repair body tissues. The amount you feed your adult dog should be based on his or her size and energy output. Activity levels may vary dramatically between pets, and will play an important role in determining caloric intake.</p>
+
+
+  <ul id="myUL">
+    <li><span class="caret" style="font-size: 1.3vw;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(255, 187, 0);">CLICK TO READ MORE</span>
+      <ul class="nested">
+        <hr style="border: 1px solid black;">
+       <h5>How Much to Feed Your Dog
+    </h5>
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">The amount you feed your adult dog should be based on his or her size and energy output. For example, an animal with a normal activity level should receive what we call “maintenance” energy. A pampered lap dog may require just 10% of that, while an active pet who exercises regularly outdoors may require maintenance plus 20 to 40%.</p> 
+
+
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">You may need to adjust portions as you learn your dog’s ideal “maintenance” amount. Pet owners should always consult with their dog’s veterinarian to determine the best feeding schedule and types of foods for their pets.</p> 
+
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Outside factors, like the temperature, can contribute to how much your dog should eat. Since keeping warm and cool require extra energy expenditure, extreme hot or cold weather can also increase a dog’s energy needs. Talk to your pet’s veterinarian about what to do when the mercury dips or soars.</p> 
+
+
+        <h5>Feeding Working Canines</h5>
+        
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">A dog’s energy needs will increase with his or her work and stress level, and the dietary needs of working canines—such as police dogs, guide dogs and cattle dogs—will depend on their occupations. A dog with a moderate work load may require an energy increase of 40% compared to maintenance, whereas a dog with a high work load may require an extra 50 to 70%.   
+</p>
+
+<h5>Feeding Your Dog as He Recovers from Surgery
+</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">An animal recovering from surgery or suffering from a disease may have an increased nutritional requirement for repair, healing and fighting infection. Be sure to check with your veterinarian on your pet’s post-opt nutritional needs.</p>
+<h5>Limiting Treats
+</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Treats should be given in moderation and represent five percent or less of the dog’s daily food intake. The rest should come from a nutritionally compete dog food. When using treats as motivation, such as during training exercises, use the smallest pieces you can.</p>
+
+<h5>Setting a Feeding Schedule
+</h5>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">We recommend all dogs be fed twice daily. Simply divide the amount of food your pet requires into two meals, spaced eight to twelve hours apart. Dogs may be fed in a number of ways that meet both the owner’s and the animal’s needs. These methods include portion-control, free-choice and timed feeding.
+    <ul>
+        <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Portion-control feeding</h5>refers to controlling the amount of food that your pet consumes by measuring your pet’s food and providing it in one or meals daily. This method is often used for weight control programs and for animals that might overeat if fed free-choice.</span> </li>
+        <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Free-choice feeding</h5>allows food to be available to your pet at all times, as much as your pet wants, and whenever he or she wants it. This method is best when feeding dry food, which will not spoil when left out. Most nursing mothers are often free-choice fed, but some dogs will overeat when fed in this manner, resulting in obesity.</span> </li>
+        <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Timed feeding</h5>involves making a portion of food available for your pet to eat for a specific period of time. For example, food can be placed in the dog’s bowl for 30 minutes. After that time, if the pet has not consumed the food, it is removed.</span> </li>
+    </ul>
+    <hr style="border: 1px solid black;">
+      </ul>
+    </li>
+  </ul>
+
+<br>
+
+  <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Feeding Your Senior Dog</h3>
+
+
+  <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Dogs begin to show visible age-related changes at about seven to 12 years of age. There are metabolic, immunologic and body composition changes, too. Some of these may be unavoidable while others can be managed with diet. When feeding your older dog, the main objective should be to maintain health and optimum body weight, slow development of chronic disease and minimize diseases that may already be present.</p>
+
+
+  <ul id="myUL">
+    <li><span class="caret" style="font-size: 1.3vw;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(255, 187, 0);">CLICK TO READ MORE</span>
+      <ul class="nested">
+        <hr style="border: 1px solid black;">
+       <h5>Your Pet’s Size Will Determine When to Begin a Senior Diet</h5>
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">As your dog ages, health issues may arise including deterioration of skin and coat, loss of muscle mass, more frequent intestinal problems, arthritis, obesity, dental problems and decreased ability to fight off infection. Since smaller dogs live longer and don't experience these age-related changes as early as bigger dogs, size is used to determine when it’s time to feed your canine a senior diet</p> 
+
+
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;"> A good guideline to follow is:
+    <ul style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <li>
+            Small breeds and dogs weighing less than 20 pounds—7 years of age
+        </li>
+        <li>
+            Medium breeds and dogs weighing 21 to 50 pounds—7 years of age
+        </li>
+        <li>
+            Large breeds and dogs weighing 51 to 90 pounds—6 years of age
+        </li>
+        <li>
+            Giant breeds and dogs weighing 91 pounds or more—5 years of age
+        </li>
+    </ul> 
+    </p> 
+
+        <h5>Avoid "Senior" Diets That Have Reduced Levels of Protein</h5>
+        
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Studies have shown that the protein requirement for older dogs does not decrease with age, and that protein levels do not contribute to the development or progression of renal (kidney) failure. It is important to feed older dogs diets that contain optimum levels of highly digestible protein to help maintain good muscle mass.
+</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Older dogs have been shown to progressively put on body fat in spite of consuming fewer calories. This change in body composition is inevitable and may be aggravated by either reduced energy expenditure or a change in metabolic rate. Either way, it is important to feed a diet with a lower caloric density to avoid weight gain, but with a normal protein level to help maintain muscle mass.</p>
+
+<h5>Talk To Your Veterinarian About Increasing Your Senior Dog’s GLA And FOS Intake</h5>
+
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Gamma-linolenic acid (GLA) is an omega-6 fatty acid that plays a role in the maintenance of healthy skin and coat. Although it is normally produced in a dog's liver, GLA levels may be diminished in older dogs.</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Aging can affect a dog’s intestinal bacteria, which can result in symptoms of gastrointestinal disease. Senior diets for dogs should contain FOS (fructooligosaccharides) to promote the growth of beneficial bacteria.</p>
+
+<h5>Look For Foods with High Levels of Vitamin E and Beta-Carotene</h5>
+
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Antioxidants such as vitamin E and beta-carotene help eliminate free radical particles that can damage body tissues and cause signs of aging. Senior diets for dogs should contain higher levels of these antioxidant compounds. Antioxidants can also increase the effectiveness of the immune system in senior dogs.</p>
+
+  <h5>Maintain Consistency</h5>
+
+  <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Routine care for geriatric pets should involve a consistent daily routine and periodic veterinary examinations to assess the presence or progress of chronic disease. Stressful situations and abrupt changes in daily routines should be avoided. If a drastic change must be made to an older pet's routine, try to minimize stress by introducing the change in a gradual manner.</p>
+  <hr style="border: 1px solid black;">
+      </ul>
+    </li>
+  </ul>
+<br>
+  <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Overweight Dogs</h3>
+
+
+  <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">One of the most common pitfalls dog parents should watch out for is overfeeding. Attempts to shower our dogs with love by means of big meals and lots of tasty treats are sweet, but misguided. In dogs, as with humans, extra weight can lead to health problems. Be sure to indulge your four-legged friend with affection, not food!</p>
+
+
+
+  <ul id="myUL">
+    <li><span class="caret" style="font-size: 1.3vw;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(255, 187, 0);">CLICK TO READ MORE</span>
+      <ul class="nested">
+        <hr style="border: 1px solid black;">
+       <h5>Causes of Obesity in Dogs</h5>
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Obesity is an extremely common problem in pets and, as with humans, it can be detrimental to the health of a dog. The overweight pet has many added stresses upon his body and is at an increased risk of diabetes, liver problems and joint pain.</p> 
+       <p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Obesity develops when energy intake exceeds energy requirements. This excess energy is then stored as fat. The majority of cases of obesity are related to simple overfeeding coupled with lack of exercise. Certain groups of dogs appear to be more prone to obesity than others. Specific breeds, such as Labrador retrievers and pugs, and older dogs are particularly susceptible.</p> 
+
+        <h5>How to Tell if Your Pet is Overweight</h5>
+        
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">There are a few ways easy ways to identify whether your pet has put on the pounds. You should be able to feel the backbone and touch the ribs in an animal of healthy weight. If you cannot feel your pet’s ribs without pressing, there is too much fat.
+</p>
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">Also, you should see a noticeable waist between the back of the rib cage and the hips when looking at your pet from above. When viewed from the side, there should be a “tuck” in the tummy, meaning the abdomen should go up from the bottom of the rib cage to inside the thighs. Dogs who fail these simple tests may be overweight.</p>
+
+<h5>How to Help Manage Your Dog’s Weight</h5>
+
+<p style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">We have a few tips that can help your pet shed the extra padding. Please note, if your pup has put on weight, we recommend that you consult your pet’s vet before starting on a weight loss program</p>
+<ul>
+    <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Correct your pet’s diet.</h5> Overweight animals consume more calories than they require. Work with your veterinarian to select a more suitable food and determine your pet’s caloric requirements. The diet should contain a normal level of a moderately fermentable fiber and fat to prevent the skin and coat from suffering during weight loss.</span> </li>
+    <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Increase regular exercise.</h5> Increasing physical activity can be valuable to both weight loss and weight maintenance. Regular exercise burns more calories, reduces appetite, changes body composition and will increase your pet’s resting metabolic rate.</span> </li>
+    <li style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;" style="list-style-type:disc;"> <span><h5>Modify your behavior.</h5>A successful weight management program means making changes in your behaviors that have contributed to your pet’s weight. For example, you may be giving your pet too many treats or not giving her enough opportunities to exercise.</span> </li>
+<ul style="font-size: 1.5vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <li>
+        Here are some ways you can commit to your pet’s weight loss:
+<ul style="font-size: 1.4vw;" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <li>
+        Remove your pet from the room when the family eats
+
+    </li>
+    <li>
+        Feed your pet several small meals throughout the day
+    </li>
+    <li>
+        Reduce snacks and treats, and feed all meals and treats in your pet’s bowl only
+    </li>
+    <li>
+        Provide non-food related attention with lots of affection
+    </li>
+</ul>
+    </li>
+</ul>
+
+
+</ul>
+
+
+<hr style="border: 1px solid black;">
+
+      </ul>
+    </li>
+  </ul>
+
+
+
+</div>
+<br><br><br><br><br><br>
+
+
+<!--Footer-->
+<footer style="background-color: rgba(146, 146, 146, 0.541);">
+
+    <div class="container"><br><br>
+      
+      
+    <div class="container">
+      <!--Breadcrumb-->
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#about_us_link">About</a></li>
+        <li class="breadcrumb-item"><a href="image.html">Gallery Section</a></li>
+        <li class="breadcrumb-item">tips</li>
+        <li class="breadcrumb-item"><a href="breeds.html">Breeds</a></li>
+      </ul>
+    </div>
+      
+      <br><br><br><br><br>
+    
+    <div class="row">
+    
+    <div class="col-md-3">
+    <a href="index.html"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Home</h5></a>
+    </div>
+    
+    <div class="col-md-3">
+    <a href="#about_us_link"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;" >About Us</h5></a>
+    </div>
+    
+    <div class="col-md-3">
+    <a href="#service_id"><h5  class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Services</h5></a>
+    </div>
+      
+    <div class="col-md-3">
+    <a href="https://www.bbc.com/news/topics/cl866rrqjz4t/dogs"><h5 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">News</h5></a>
+    </div>
+    
+  
+    </div>
+    
+    </div>
+    <br><br><br><br><br><br>
+    <p class="text-white text-center" style="font-size: 1.3vw;">&copyCopyrights | Privacy policies</p>
+    <br>
+    </footer>
+    
+    
+<script>
+
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    
+        </script>
+    
+
+</body>
+</html>
+
+
+
+
+
